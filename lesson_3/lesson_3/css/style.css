@@ -1,0 +1,80 @@
+/* RESET */
+@import url(reset.css);
+
+/* MAIN */
+div {
+    color: red;
+}
+
+h1 {
+    color: green;
+}
+
+.about{
+    color: blue;
+}
+
+#characteristic {
+    color: yellow;
+}
+
+div.characteristics_text {
+    color: navy;
+}
+
+.number__of__crew{
+    color: purple;
+}
+/* перезапише попереднє значення */
+.characteristics__crew.number__of__crew{
+    color: brown;
+}
+
+#modification,
+#creation{
+    color: aquamarine;
+}
+
+
+
+
+div .a{
+    color: chartreuse;
+}
+
+
+div .b{
+    color: rgb(230, 5, 162);
+}
+
+
+.Modifications .a {
+    color: rgb(96, 96, 206);
+}
+
+.Modifications .a + .b{
+    color: rgb(175, 248, 6);
+}
+
+
+
+
+
+.weapon {
+    color: orange;
+}
+
+
+p > mark{
+    color: black;
+}
+
+
+[href*="#"] {
+    color: darkorange;
+}
+
+footer div{
+    color: black;
+}
+
