@@ -1,0 +1,91 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
+/* font-family: 'Unbounded', cursive; */
+
+@font-face {
+    font-family: "Pacifico-Regular";
+    src:url("../fonts/Pacifico-Regular.woff2") format("woff2"), url("../fonts/Pacifico-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style:normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.header h1{
+    font-family: Pacifico-Regular;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.6;
+    text-shadow: 10px 10px 20px blue, 10px 6px 5px red;
+
+}
+
+.header p{
+    font-family: Unbounded;
+    text-align: center;
+    color:darkslategrey;
+    word-spacing: 10px;
+}
+
+.linux h2 {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 2;
+}
+
+.linux p{
+    text-indent: 25px;
+}
+
+div li {
+    font-family: Pacifico-Regular;
+    font-size: 16px;
+    white-space: nowrap;
+    line-height: 1.6;
+}
+
+div > div > div >p {
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.linux-what{
+    font-style: italic;
+}
+
+.linux-user > p{
+    text-decoration:underline dotted;
+}
+
+.linux-distribution{
+    font-style: oblique;
+}
+
+.img{
+    text-align: center;
+}
+
+footer{
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+footer p {
+    line-height: 2;
+}
+
+footer a{
+    color: red;
+    font-style: italic;
+    text-decoration: overline wavy green;
+    line-height: 3;
+}
