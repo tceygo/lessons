@@ -1,0 +1,75 @@
+
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+
+.purpose  {
+    margin-bottom: 80px;
+}
+
+.purpose  p{
+    margin-bottom: 33px;
+}
+
+.purpose > .text{
+    margin-bottom: 80px;
+}
+
+.head, .head2, .text {
+    max-width: 816px;
+    margin: 0 auto;
+}
+.head, .head2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #212529;
+}
+.head{
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+}
+
+.head h1{
+    padding-right: 50%;
+}
+.text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.79;
+    color: #6C757D;
+}
+.foto, .two-foto {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.foto img{
+    width: 100%;
+}
+
+.realize p{
+    margin-bottom: 33px;
+}
+
+.realize > .text{
+    margin-bottom: 80px;
+}
+.head2 h1 {
+    margin-bottom: 40px;
+    padding-right: 25.9%;
+
+}
+.two-foto {
+    font-size: 0;
+    margin-bottom: 80px;
+
+}
+
+.two-foto img {
+    font-size: 16px;
+    width: 48.8%;
+}
+.foto1{
+    margin-right: 2.4%;
+}
