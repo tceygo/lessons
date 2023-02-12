@@ -1,0 +1,136 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.article {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6; /* 40/25 */
+    color: #212529;
+}
+.article__container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-block {
+    max-width: 816px;
+    margin: 0 auto;
+    color: #6C757D;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.78; /* 25/14 */
+
+}
+
+.title-first{
+    margin-bottom: 40px;
+}
+p {
+    margin-bottom: 33px;
+}
+
+.text-1{
+    margin-bottom: 80px;
+}
+
+.foto {
+    max-width: 100%;
+}
+.foto1, .fotos-block1{
+    margin-bottom: 80px;
+}
+
+.title-second{
+    margin-bottom: 35px;
+}
+
+.text-2{
+    margin-bottom: 85px;
+}
+.fotos-block1, .fotos-block2{
+    font-size: 0;
+
+}
+.fotos-block1 > img, .fotos-block2 > img{
+    font-size: 16px;
+
+}
+.fotom{
+    margin-right: 30px;
+}
+
+.text-3{
+    margin-bottom: 100px;
+}
+
+.fotos-block21{
+    margin-right: 2.42%;
+    max-width: 48.79%;
+}
+
+.fotos-block22{
+    max-width: 48.79%;
+}
+
+.foto4, .text-4, .title-third, .fotos-block2{
+    margin-bottom: 100px;
+}
+
+
+
+.border{
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.text1{
+    border-bottom: green solid 10px;
+    border-top: red dotted 10px;
+    border-left: purple double 10px;
+    border-right: yellowgreen dashed 10px;
+    margin-bottom: 30px;
+}
+
+.text2{
+    outline: red 5px solid;
+    margin-bottom: 30px;
+}
+
+.circles{
+    margin: 0 auto 30px;
+    font-size: 0;
+    width: 800px;
+    height: 400px;
+}
+
+.circle{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    border: rgba(0, 0, 255, 0.7) solid 5px;
+    border-radius: 50%;
+    box-shadow: -26px -5px 36px 8px green, -16px -10px 48px 10px inset yellow;
+}
+
+.text3{
+    font-size: 35px;
+    font-weight: 700;
+    border: solid green 10px;
+    border-radius: 100px;
+    opacity: 0.5;
+    overflow:hidden;
+    outline: red solid 10px;
+    box-shadow: yellow 0px 0px 50px 10px inset;
+}
