@@ -44,12 +44,12 @@
 }
 .a5 {
     background-image: url(../img/design/05.svg);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .a6 {
     background-image: url(../img/design/06.svg);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .a7 {
