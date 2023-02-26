@@ -1,0 +1,87 @@
+.content{
+    background-color: gray;
+    font-size: 0;
+}
+.content div{
+    font-size: 16px;
+}
+.line{
+    height: 5px;
+    background-color: orange;
+}
+.content img{
+    width: 200px;
+    border: red 5px solid;
+    vertical-align: top;
+}
+
+.design{
+    background-color: red;
+}
+
+.design > div > div{
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+
+.a2 {
+    background-image: url(../img/design/02.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a3 {
+    background-image: url(../img/design/03.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a4 {
+    background-image: url(../img/design/04.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a5 {
+    background-image: url(../img/design/05.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a6 {
+    background-image: url(../img/design/06.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a7 {
+    background-image: url(../img/design/07.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a8 {
+    background-image: url(../img/design/08.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a9 {   
+    background-image: url(../img/design/09.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a10 {
+    background-image: url(../img/design/10.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.a11 {
+    background-image: url(../img/design/11.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.icon{
+    background-color: gray;
+}
+
+.icon img{
+    border: red 5px solid;
+    vertical-align: top;
+}
