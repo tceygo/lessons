@@ -1,0 +1,197 @@
+@import url(reset.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* ################################################ */
+
+.page {
+    font-family: "Poppins", sans-serif;
+}
+.page__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.achivement {
+}
+
+.achivement_margin {
+    margin-bottom: 100px;
+}
+
+.achivment__title {
+    display: flex;
+    margin-bottom: 40px;
+}
+.achivment__text {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-right: 26px;
+}
+.achivment__line {
+    border-top: 2px solid #000000;
+    width: 38.666667%; /* 464/1200 */
+    margin-top: 10px;
+}
+.achivment__card:not(:last-child) {
+    margin-bottom: 20px;
+}
+.achivment__card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+}
+.card__image {
+    max-width: 62.166667%; /* 746/1200 */
+    overflow: hidden;
+    align-self: center;
+}
+
+.card__image > img {
+    width: 100%;
+}
+
+.card__text {
+    max-width: 27.833333%; /* 334/1200 */
+    align-self: center;
+}
+.card__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.card__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #9c9c9c;
+}
+
+/* ##################################################################### */
+
+.minimalism {
+}
+.minimalism__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.4;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.minimalism__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+    text-align: center;
+    max-width: 518px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+}
+.minimalism__image {
+    margin-bottom: 100px;
+}
+
+.minimalism__image img {
+    width: 100%;
+}
+
+.minimalism__text {
+    margin-bottom: 82px;
+}
+.text {
+    display: flex;
+    column-gap: 32px;
+    justify-content: space-between;
+}
+.text__left {
+    max-width: 48.666667%; /* 584/1200 */
+}
+.text__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+
+    color: #333333;
+    margin-bottom: 24px;
+}
+.text__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #9c9c9c;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.text__more {
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.6;
+color: #9C9C9C;
+padding-top: 60px;
+display: flex;
+column-gap: 80px;
+}
+.text__date {
+    
+}
+
+.text__furnitur{
+}
+
+.text__furnitur:hover{
+    text-decoration: underline;
+    
+
+}
+.text__right {
+    max-width: 48.666667%; /* 584/1200 */
+}
+.minimalism__example {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 32px;
+    justify-content: space-between;
+}
+.example {
+}
+.example__img1 {
+    max-width: 48.666667%;/*  582/1200 */
+}
+
+.example__img1:nth-child(3) {
+    max-width: 100%;
+}
+
+
+.example__img1 > img {
+    width: 100%;
+}
