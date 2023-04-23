@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+
+<body>
+    <main class="page">
+        <div class="order">
+            <div class="order__container">
+                <div class="order__address address">
+                    <div class="address__title title">Shipping Address </div>
+                    <form action="#" class="address__form form" method="POST">
+                        <div class="form__line">
+                            <label class="form__label" for="email">Email Address <span class="required">*</span></label>
+                            <input required class="form__input" id="email" type="email"
+                                placeholder="    roni_cost@example.com">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="pass">Password</label>
+                            <input class="form__input" id="pass" type="password" autocomplete="off">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="postal">Zip/Postal Code</label>
+                            <input class="form__input" id="postal" type="text">
+                        </div>
+                        <div class="form__text">
+                            You already have an account with us. Sign in or continue as guest.
+                        </div>
+                        <button class="button" type="submit">login</button>
+                        <a href="#" class="form__question">Forgot Your Password?</a>
+                    </form>
+                </div>
+                <div class="order__shiping shiping">
+                    <form action="#" class="shiping__form form" method="POST">
+                        <div class="form__line">
+                            <label class="form__label" for="name">First Name<span class="required">*</span></label>
+                            <input required class="form__input" id="name" type="text">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="lname">Last Name<span class="required">*</span></label>
+                            <input required class="form__input" id="lname" type="text">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="company">Company</label>
+                            <input class="form__input" id="company" type="text">
+                        </div>
+                        <div class="address-container">
+                            <div class="form__line form__line_address">
+                                <label class="form__label form__label_addres" for="address">Street Address<span
+                                        class="required">*</span></label>
+                                <input required class="form__input" id="address" type="text">
+                            </div>
+                            <div class="form__line form__line_right form__line_address">
+
+                                <input class="form__input" type="text">
+                            </div>
+                            <div class="form__line form__line_right form__line_address">
+
+                                <input class="form__input" type="text">
+                            </div>
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="country">Country<span class="required">*</span></label>
+                            <input required class="form__input" id="country" type="text">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="state">State/Province<span class="required">*</span></label>
+                            <select required class="form__input" id="state" type="text">
+                                <option value="" disabled selected>Please select a region, state or province</option>
+                                <option value="1">Oregon</option>
+                                <option value="2">Vashington</option>
+                            </select>
+                        </div>
+                        <div class="form__shipping shipping">
+                            <div class="shiping__title title">
+                                Shipping Methods
+                            </div>
+                            <div class="shipping__radio-line">
+                                <div class="shipping__container">
+                                    <div class="shipping__check">
+                                        <input required class="shipping__radio" type="radio" id="fixed" name="cost"
+                                            value="5">
+                                        <label class="shipping__radio-lable" for="fixed">$5.00</label>
+                                    </div>
+                                    <div class="shipping__info">
+                                        <div class="shipping__radio-text">Fixed</div>
+                                        <div class="shipping__radio-text">Flat Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shipping__radio-line">
+                                <div class="shipping__container">
+                                    <div class="shipping__check">
+                                        <input required class="shipping__radio" type="radio" id="rate" name="cost"
+                                            value="5">
+                                        <label class="shipping__radio-lable" for="rate">$10.00</label>
+                                    </div>
+                                    <div class="shipping__info">
+                                        <div class="shipping__radio-text">Table Rate</div>
+                                        <div class="shipping__radio-text">Best Way</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigatoin">
+                            <button class="button" type="submit">next</button>
+                            <a href="#" class="back">Back</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator">
+
+        </div>
+        <div class="cheeckout">
+            <div class="cheeckout__container">
+                <div class="cheeckout__title">
+                    Billing Details
+                </div>
+                <form action="https://jsonplaceholder.typicode.com/posts" class="cheeckout__form form-cheeck"
+                    method="POST">
+                    <div class="cheeckout__form-container">
+                        <div class="left">
+                            <div class="form-cheeck__container">
+                                <div class="form-cheeck__input-item">
+                                    <input name="fname" required class="form-cheeck__cheeckout-input" type="text"
+                                        placeholder="First name*">
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="lname" required class="form-cheeck__cheeckout-input" type="text"
+                                        placeholder="Last name*">
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="address" required class="form-cheeck__cheeckout-input" type="text"
+                                        placeholder="Address*">
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="address2" class="form-cheeck__cheeckout-input" type="text"
+                                        placeholder="Address line 2">
+                                </div>
+                                <div class="form-cheeck__input-item">
+
+                                    <select name="country" required class="form-cheeck__cheeckout-select" type="text">
+                                        <option class="form-cheeck__option form-cheeck__option_placeholder" value=""
+                                            disabled selected>Country*</option>
+                                        <option class="form-cheeck__option" value="1">Ukraine</option>
+                                        <option class="form-cheeck__option" value="2">USA</option>
+                                    </select>
+
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="city" required class="form-cheeck__cheeckout-input" type="text"
+                                        placeholder="City/Town*">
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="postcode" class="form-cheeck__cheeckout-input" type="text"
+                                        placeholder="Postcode / ZIP*">
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="phone" required class="form-cheeck__cheeckout-input" type="tel"
+                                        placeholder="Phone*">
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="postcode2" class="form-cheeck__cheeckout-input" type="text"
+                                        placeholder="Postcode / ZIP*">
+                                </div>
+                                <div class="form-cheeck__input-item">
+                                    <input name="phone2" required class="form-cheeck__cheeckout-input" type="tel"
+                                        placeholder="Phone*">
+                                </div>
+                            </div>
+                            <textarea class="form-cheeck__cheeckout-textarea" name="information"
+                                placeholder="Additional information"></textarea>
+                            <div class="form-cheeck__items">
+                                <div class="form-cheeck__box box">
+                                    <input name="account" class="box__input" type="checkbox" id="account">
+                                    <label class="box__lable" for="account">Create Account</label>
+                                </div>
+                                <div class="form-cheeck__box box">
+                                    <input name="different" class="box__input" type="checkbox" id="assresses">
+                                    <label class="box__lable" for="assresses">Ship to a different address?</label>
+                                </div>
+                            </div>
+                            <form class="form-cheeck__discount discount" action="#" method="post">
+                                <div class="discount__title">
+                                    Apply Coupon to get discount!
+                                </div>
+                                <input name="discount" class="discount__input" type="text" placeholder="Coupon code">
+                                <button class="discount__button" type="submit">Apply Code</button>
+                            </form>
+                        </div>
+                        <div class="right">
+                            <button class="submit-oll" type="submit">Place an Order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
