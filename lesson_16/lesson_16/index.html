@@ -71,7 +71,7 @@
                         </div>
                         <div class="form__line">
                             <label class="form__label" for="state">State/Province<span class="required">*</span></label>
-                            <select required class="form__input" id="state" type="text">
+                            <select required class="form__input" id="state">
                                 <option value="" disabled selected>Please select a region, state or province</option>
                                 <option value="1">Oregon</option>
                                 <option value="2">Vashington</option>
@@ -148,7 +148,7 @@
                                 </div>
                                 <div class="form-cheeck__input-item">
 
-                                    <select name="country" required class="form-cheeck__cheeckout-select" type="text">
+                                    <select name="country" required class="form-cheeck__cheeckout-select">
                                         <option class="form-cheeck__option form-cheeck__option_placeholder" value=""
                                             disabled selected>Country*</option>
                                         <option class="form-cheeck__option" value="1">Ukraine</option>
@@ -189,13 +189,13 @@
                                     <label class="box__lable" for="assresses">Ship to a different address?</label>
                                 </div>
                             </div>
-                            <form class="form-cheeck__discount discount" action="#" method="post">
+                            <div class="form-cheeck__discount discount" >
                                 <div class="discount__title">
                                     Apply Coupon to get discount!
                                 </div>
                                 <input name="discount" class="discount__input" type="text" placeholder="Coupon code">
                                 <button class="discount__button" type="submit">Apply Code</button>
-                            </form>
+                            </div>
                         </div>
                         <div class="right">
                             <button class="submit-oll" type="submit">Place an Order</button>
