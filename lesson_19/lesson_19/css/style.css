@@ -1,0 +1,457 @@
+@import url(reset.css);
+@import url(common.css);
+
+
+.wrapper {
+}
+.block {
+}
+
+
+
+/* ####################################################### */
+.block__container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.links {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 30px;
+}
+.link {
+    overflow: hidden;
+}
+
+.links > .link:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.link__block {
+    display: block;
+    padding: 40px;
+}
+
+.link__block_chear {
+    background-image: url("../img/links/chear.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link__block_watch {
+    background-image: url("../img/links/watch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 0;
+}
+
+.link__block_laptop {
+    background-image: url("../img/links/laptop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 0;
+}
+
+.link__hash {
+    display: block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #637381;
+    margin-bottom: 12px;
+}
+.link__title {
+    max-width: 362px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.25;
+    color: #212b36;
+    /* margin-bottom: 38px; */
+}
+
+.link:nth-child(1) .link__title {
+    margin-bottom: 304px;
+}
+
+@media (max-width: 1080px) {
+    .link__title {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 954px) {
+    .link__title_laptop {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .links {
+        display: grid;
+        grid-template: 1fr 1fr 1fr/ 1fr;
+        gap: 30px;
+    }
+
+    .links > .link:nth-child(1) {
+        grid-row: 1/2;
+    }
+
+    .link:nth-child(1) .link__title {
+        margin-bottom: 38px;
+    }
+
+    .link__img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 415px) {
+    .link__block_watch {
+        background-position: left 0;
+    }
+
+    .link__block_laptop {
+        background-position: left 0;
+    }
+}
+
+/* ####################################################### */
+
+.latest {
+    background-color: #fafafa;
+}
+.latest__container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.latest__title {
+    margin-bottom: 15px;
+}
+.latest__subtitle {
+}
+.latest__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.cards {
+}
+.cards__item {
+    display: block;
+}
+.item {
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item__foto {
+    margin-bottom: 25px;
+}
+
+.item__foto > img {
+    /* min-width: 100%; */
+    object-fit: contain;
+}
+
+.item__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #212b36;
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+.item__subtitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #637381;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 25px;
+}
+
+.item__by-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__rating {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+}
+.raiting {
+}
+.raiting__star {
+    position: relative;
+    margin-right: 1px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+}
+.raiting__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.raiting__lable {
+    cursor: pointer;
+}
+
+.raiting__lable::before {
+    display: inline-block;
+    content: url(../img/latest/star-gray.svg);
+    width: 16px;
+    height: 16px;
+
+    color: #637381;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+
+.raiting__input:hover ~ .raiting__lable::before,
+.raiting__input:checked ~ .raiting__lable::before {
+    /* color: #FFA645; */
+    content: url(../img/latest/star.svg);
+}
+
+.rating__reviews {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #637381;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.item__prise {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212b36;
+    padding: 15px 20px;
+    border-left: 1px solid #e7e7e7;
+}
+
+.latest__swip {
+    width: 84px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+    border: solid 0.5px #e7e7e7;
+    margin: 0 auto;
+    display: flex;
+    padding: 6px;
+    justify-content: space-between;
+}
+.swip {
+}
+.swip__left,
+.swip__right {
+    position: relative;
+    width: 29.994px;
+    height: 29.997px;
+    border-radius: 50%;
+    border: solid 0.5px #e7e7e7;
+}
+
+.swip__left:hover,
+.swip__right:hover {
+    background-color: #3056d3;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.swip__left::after {
+    display: inline-block;
+    min-width: 100%;
+    min-height: 100%;
+    content: "";
+    background-image: url(../img/latest/left.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.swip__left:hover::after {
+    background-image: url(../img/latest/right.svg);
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+.swip__right:hover::after {
+    background-image: url(../img/latest/right.svg);
+    transform: none;
+}
+.swip__right::after {
+    display: inline-block;
+    min-width: 100%;
+    min-height: 100%;
+    content: "";
+    background-image: url(../img/latest/left.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    transform-origin: center;
+    /* transition-property: background-image;
+    transition-duration: 0.2s; */
+}
+
+@media (max-width: 866px) {
+    .latest__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards__item-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .latest__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cards__item-2 {
+        display: none;
+    }
+}
+
+/* ####################################################### */
+
+.trending {
+}
+.trending__container {
+}
+
+.trending__title {
+}
+
+.trending__subtitle {
+}
+
+.trending__goods {
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(3, 1fr);
+}
+.goods {
+}
+.goods__item {
+    padding: 25px 25px 40px;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+.goods__item_center {
+}
+
+.goods__item_left {
+}
+
+.goods__item_right {
+}
+
+.good {
+}
+.good__image {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.good__image img {
+    max-width: 100%;
+}
+.good__prise {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3; /* 130% */
+    margin-bottom: 10px;
+}
+.good__name {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25; /* 125% */
+    margin-bottom: 8px;
+}
+.good__rating {
+    display: flex;
+    gap: 10px;
+}
+.rating {
+}
+.rating_form {
+    position: relative;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+.rating__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.rating__label::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/trending/star-off.svg);
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    
+}
+
+.rating__input:hover ~ .rating__label::after,
+.rating__input:checked ~ .rating__label::after{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/trending/star-on.svg);
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    
+}
+
+
+.rating__info {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    color: #637381;
+}
+
+
+
+
