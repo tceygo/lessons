@@ -156,12 +156,18 @@
 }
 
 .item__foto {
+    padding-bottom: 78.804%;
+    position: relative;
     margin-bottom: 25px;
 }
 
 .item__foto > img {
-    /* min-width: 100%; */
-    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .item__title {
@@ -380,12 +386,19 @@
 .good {
 }
 .good__image {
+   padding-bottom: 76.471%;
+    position: relative;
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 24px;
 }
 .good__image img {
-    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .good__prise {
     font-family: Inter;
@@ -456,5 +469,20 @@
 }
 
 
+@media (max-width: 921px){
+    .trending__goods {
+
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 570px){
+    .trending__goods {
+
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
