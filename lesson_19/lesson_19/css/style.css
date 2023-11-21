@@ -143,13 +143,16 @@
 .cards {
 }
 .cards__item {
-    display: block;
+    
 }
 .item {
     background: #ffffff;
     border: 1px solid #e7e7e7;
     border-radius: 8px;
     overflow: hidden;
+}
+.item__link{
+   display: block; 
 }
 
 .item__foto {
