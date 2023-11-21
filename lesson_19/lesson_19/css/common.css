@@ -35,6 +35,7 @@
 }
 
 .title-link{
+    display: block;
     color: #3056d3;
     text-align: center;
     font-family: Inter;
