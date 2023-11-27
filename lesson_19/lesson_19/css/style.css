@@ -361,7 +361,7 @@
     border: 1px solid #e7e7e7;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 2;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
 }
 .goods {
