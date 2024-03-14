@@ -1,0 +1,13 @@
+@use "sass:math";
+
+@mixin imgBox($hight, $width){
+    position: relative;
+    padding-bottom:(paddingImg($hight, $width));
+
+
+}
+    
+@function paddingImg($hightH, $widthW){
+    $rez:math.div($hightH, $widthW)*100%;
+    @return $rez;
+}
